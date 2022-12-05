@@ -1,0 +1,32 @@
+/* GOOGLE FONTS */
+
+/* VARIABLES CSS */
+:root {
+  /* primary */
+  --color-LightCyan: hsl(193, 38%, 86%);
+  --color-NeonGreen: hsl(150, 100%, 66%);
+
+  /* neutral */
+  --color-GrayishBlue: hsl(217, 19%, 38%);
+  --color-DarkGrayishBlue: hsl(217, 19%, 24%);
+  --color-DarkBlue: hsl(218, 23%, 16%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  font-size: 28px;
+}
+
+.advice {
+  max-width: 540px;
+  height: 364px;
+}

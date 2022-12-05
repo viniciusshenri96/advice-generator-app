@@ -46,12 +46,13 @@ body {
   align-content: start;
 }
 
-.advice__title {
+.advice__id {
   font-size: 13px;
   line-height: 1.38;
   font-weight: 800;
   letter-spacing: 4.09px;
   color: var(--color-NeonGreen);
+  text-transform: uppercase;
 }
 
 .advice__text {

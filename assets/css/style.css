@@ -20,23 +20,58 @@
   margin: 0;
 }
 
+button,
+[type="button"] {
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+}
+
+/**
+ * Screen Reader Class
+ * 
+ * To hide content visually.
+ *
+ * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
+ */
+.sr-only {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   line-height: 1.5;
-  font-size: 28px;
+  font-size: 1.75rem;
+  /* improves text rendering */
+  -webkit-font-smoothing: antialiased;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--color-DarkBlue);
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 
 .advice {
-  max-width: 540px;
-  padding: 48px 48px 72px 48px;
+  max-width: 33.75rem;
+  padding: 3rem 3rem 4.5rem 3rem;
   position: relative;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   background: var(--color-DarkGrayishBlue);
 }
 
@@ -47,21 +82,20 @@ body {
 }
 
 .advice__id {
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 1.38;
   font-weight: 800;
-  letter-spacing: 4.09px;
+  letter-spacing: 0.256rem;
   color: var(--color-NeonGreen);
   text-transform: uppercase;
 }
 
 .advice__text {
-  font-size: 28px;
   line-height: 1.35;
   text-align: center;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.019rem;
   color: var(--color-LightCyan);
-  margin: 24px 0 40px 0;
+  margin: 1.5rem 0 2.5rem 0;
   position: relative;
 }
 
@@ -71,7 +105,6 @@ body {
 
 .btn__generate {
   position: absolute;
-  /* top: 0; */
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
@@ -80,8 +113,8 @@ body {
   justify-content: center;
   border: none;
   background: none;
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   background: var(--color-NeonGreen);
   cursor: pointer;
@@ -89,19 +122,19 @@ body {
 }
 
 .btn__generate:hover {
-  box-shadow: 0px 0px 40px var(--color-NeonGreen);
+  box-shadow: 0 0 2.5rem var(--color-NeonGreen);
 }
 
 @media (max-width: 540px) {
   .advice {
-    padding: 40px 24px 64px 24px;
+    padding: 2.5rem 1.5rem 4rem 1.5rem;
   }
   .advice__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.4;
     text-align: center;
-    letter-spacing: -0.26px;
-    margin: 24px 0 24px 0;
+    letter-spacing: -0.016rem;
+    margin: 1.5rem 0 1.5rem 0;
     position: relative;
   }
 }

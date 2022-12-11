@@ -27,13 +27,6 @@ button,
   overflow: visible;
 }
 
-/**
- * Screen Reader Class
- * 
- * To hide content visually.
- *
- * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
- */
 .sr-only {
   position: absolute !important;
   margin: -1px !important;
@@ -125,7 +118,7 @@ body {
   box-shadow: 0 0 2.5rem var(--color-NeonGreen);
 }
 
-@media (max-width: 540px) {
+@media (max-width: 33.75em) {
   .advice {
     padding: 2.5rem 1.5rem 4rem 1.5rem;
   }

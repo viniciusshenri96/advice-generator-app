@@ -45,7 +45,7 @@ try {
 }
 ```
 
-<h3>Animated blackground with Vanta.js: <a>https://www.vantajs.com</a></h3>
+<h3>Animated blackground with <a href="https://www.vantajs.com">Vanta.js:</a></h3>
 
 HTML:
 

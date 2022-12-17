@@ -99,6 +99,8 @@ body {
   transition: opacity 2s ease-in-out, filter 2s ease-in-out;
   text-align: center;
   position: relative;
+  display: grid;
+  align-items: start;
 }
 
 .advice__content.animation {

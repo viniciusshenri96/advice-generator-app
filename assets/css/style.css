@@ -93,8 +93,7 @@ body {
   position: relative;
   border-radius: 0.938rem;
   background: var(--color-DarkGrayishBlue);
-  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
-  border-radius: 15px;
+  box-shadow: 1.875rem 3.125rem 5rem rgba(0, 0, 0, 0.100202);
 }
 
 .advice__content {

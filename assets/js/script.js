@@ -12,7 +12,7 @@ btnUpdate.addEventListener("click", async () => {
     const data = await res.json();
     adviceText.innerText = `“${data.slip.advice}”`;
     adviceID.innerText = data.slip.id;
-    adviceContainer.classList.add("animation");
+    adviceContent.classList.add("animation");
   } catch (err) {
     console.error(new Error("It is not an internet connection"));
   }

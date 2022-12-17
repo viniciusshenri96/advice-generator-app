@@ -20,6 +20,14 @@
   margin: 0;
 }
 
+/* better for people who browse with the keyboard and know where they are on the site, so I set a different style, making it more visible, taking it from the default.
+ */
+*:focus,
+*:focus-visible {
+  outline: var(--color-NeonGreen) dotted 4px;
+  outline-offset: 4px;
+}
+
 button,
 [type="button"] {
   -webkit-appearance: button;

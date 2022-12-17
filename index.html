@@ -7,21 +7,21 @@
   <meta name="description" content="The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.
 
   ">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>Advice generator app</title>
 </head>
 
 <body>
+  <div id="vanta"></div>
 
   <main>
     <section class="advice">
+      <h1 class="sr-only">titulo</h1>
       <div class="advice__content">
         <p class="advice__id">advice #<span class="advice__id-number">117</span></p>
-        <blockquote>
-          <p class="advice__text">“It is easy to sit up and take notice, what's difficult is getting up and taking
-            action.”</p>
-        </blockquote>
+        <p class="advice__text">“It is easy to sit up and take notice, what's difficult is getting up and taking
+          action.”</p>
         <img class="advice__details" src="/assets/images/pattern-divider-desktop.svg" aria-hidden="true" alt="">
       </div>
       <button class="btn__generate">
@@ -34,6 +34,9 @@
       </button>
     </section>
   </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 

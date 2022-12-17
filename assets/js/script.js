@@ -1,6 +1,6 @@
 "use strict";
 
-const adviceContainer = document.querySelector(".advice__content");
+const adviceContent = document.querySelector(".advice__content");
 const adviceText = document.querySelector(".advice__text");
 const adviceID = document.querySelector(".advice__id-number");
 const btnUpdate = document.querySelector(".btn__generate");

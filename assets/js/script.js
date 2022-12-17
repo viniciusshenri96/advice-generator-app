@@ -10,11 +10,11 @@ btnUpdate.addEventListener("click", async () => {
     adviceContent.classList.remove("animation");
     const res = await fetch("https://api.adviceslip.com/advice");
     const data = await res.json();
-    adviceText.innerText = `“${data.slip.advice}”`;
-    adviceID.innerText = data.slip.id;
+    adviceText.textContent = `“${data.slip.advice}”`;
+    adviceID.textContent = data.slip.id;
     adviceContent.classList.add("animation");
   } catch (err) {
-    console.error(new Error("It is not an internet connection"));
+    console.error(new Error("There is no internet connection"));
   }
 });
 

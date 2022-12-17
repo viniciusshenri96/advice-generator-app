@@ -7,7 +7,7 @@ const btnUpdate = document.querySelector(".btn__generate");
 
 btnUpdate.addEventListener("click", async () => {
   try {
-    adviceContainer.classList.remove("animation");
+    adviceContent.classList.remove("animation");
     const res = await fetch("https://api.adviceslip.com/advice");
     const data = await res.json();
     adviceText.innerText = `“${data.slip.advice}”`;
